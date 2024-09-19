@@ -17,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 3vw;
-    margin-block: 47px;
+    margin-block: clamp(1em, 2vw, 47px);
 }
 .header__tittle {
     color: rgb(255, 255, 255);
@@ -64,13 +64,20 @@
     line-height: 125%;
     letter-spacing: -1px;
     text-align: left;
-    margin-block-end: 24px;
+    margin-block-end: calk(1em, 2vw, 24px);
 }
 .section__main_text {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: clamp(14px, 2vw, 24px);
+    font-weight: 400;
+    line-height: 143%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-block-end: calk(1em, 2vw, 24px);
 }
 .hero__btn {
 }
-.page_btn {
-}
+
 .hero_txt {
 }
