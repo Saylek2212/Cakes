@@ -4,8 +4,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: clamp(280px, 50vw, 1295px);
-    // margin-block-end: 150px;
+    height: clamp(280px, 60vw, 1295px);
+    margin-block-end: $sect_end;
 }
 .header__inner {
     display: flex;
@@ -57,7 +57,7 @@
     }
 }
 .hero h1 {
-    max-width: 647px;
+    // max-width: 647px;
     color: rgb(255, 255, 255);
     font-family: Montserrat;
     font-size: clamp(16px, 3vw, 48px);
@@ -65,7 +65,7 @@
     line-height: minmax(100%, 125%);
     letter-spacing: -1px;
     text-align: left;
-    margin-block-end: clamp(0.2em, 1vw, 24px);
+    margin-block-end: clamp(0.2em, 2vw, 48px);
 }
 .section__main_text {
     color: rgb(255, 255, 255);
@@ -75,7 +75,7 @@
     line-height: minmax(100%, 143%);
     letter-spacing: 0%;
     text-align: left;
-    margin-block-end: clamp(0.5em, 1vw, 24px);
+    margin-block-end: clamp(0.5em, 2vw, 48px);
 }
 .hero__btn {
     display: flex;

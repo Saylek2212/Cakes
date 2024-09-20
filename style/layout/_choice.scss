@@ -1,0 +1,53 @@
+.choice {
+    margin-block-end: $sect_end;
+}
+.choice__tittle {
+    text-align: center;
+    margin-block-end: clamp(1em, 2vw, 80px);
+}
+.choice__boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    column-gap: .5vw;
+}
+.choice__box {
+    flex-basis: 30%;
+}
+.choice__box_img {
+    margin-block-end: 62px;
+}
+.choice__box_tittle {
+    color: #2e363e;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34.32px;
+    margin-block-end: 24px;
+}
+.choice__box_txt {
+    color: #2e363e;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-block-end: 24px;
+}
+.choice__box_price {
+    color: #434b53;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-block-end: 24px;
+}
+.choice__box_btn {
+    color: #434b53;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    border: none;
+    margin-block-end: 73px;
+}

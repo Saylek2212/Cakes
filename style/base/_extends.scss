@@ -23,13 +23,11 @@
     overflow: hidden;
 }
 
-.section__title {
-    color: rgb(34, 34, 34);
-    font-family: Arial;
-    font-size: clamp(24px, 5vw, 70px);
-    font-weight: 700;
-    letter-spacing: 0%;
-    margin-block-end: 20px;
+.section__tittle {
+    font-family: Montserrat;
+    font-size: clamp(1.2rem, 3vw, 48px);
+    font-weight: 500;
+    letter-spacing: -1px;
 }
 
 .main__text {
@@ -56,5 +54,9 @@
     font-weight: 400;
     letter-spacing: 10%;
     text-transform: uppercase;
-    margin-block-end: clamp(0.5em, 1vw, 24px);
+    margin-block-end: clamp(0.5em, 3vw, 39px);
 } 
+
+.black {
+    color:$main-text;
+}

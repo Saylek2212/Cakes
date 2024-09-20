@@ -3,3 +3,16 @@
     background-size: cover;
     }
 }
+
+@media screen and (max-width: 812px) {
+    .choice__box {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .choice__box {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
