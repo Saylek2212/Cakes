@@ -3,20 +3,16 @@
 .page_btn {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
-    gap: 10;
-    padding: 30px 50px 30px 50px;
     border-radius: 8px;
     background: rgb(254, 216, 76);
     & a {
         color: rgb(46, 54, 62);
         font-family: Montserrat;
-        font-size: 18px;
+        font-size: clamp(10px, 2vw, 18px);
         font-weight: 500;
-        line-height: 152%;
-        letter-spacing: 0%;
-        text-align: center;
         text-decoration: none;
+        padding: 1vw 1vw;
+
     }
 }
