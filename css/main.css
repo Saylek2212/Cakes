@@ -380,7 +380,8 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-block: clamp(7px, 1vw, 10px);
+  padding-block: clamp(7px, 1vw, 23px);
+  padding-inline: clamp(3px, 1vw, 30px);
   border-radius: 5px;
   background: rgb(242, 246, 250);
   color: rgb(46, 54, 62);
@@ -427,7 +428,7 @@ template {
 }
 
 .page__header {
-  background-image: url(../../img/bg_hero.png);
+  background-image: url("../img/bg_hero.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -583,6 +584,76 @@ template {
   line-height: 36px;
   border: none;
   margin-block-end: 73px;
+}
+
+.another {
+  position: relative;
+  background-color: rgb(6, 17, 49);
+  margin-block-end: clamp(24px, 8vw, 150px);
+}
+
+.another__inner {
+  display: flex;
+  align-items: end;
+  -moz-column-gap: clamp(1em, 3vw, 84px);
+       column-gap: clamp(1em, 3vw, 84px);
+  margin-inline-end: 10%;
+  padding-block-start: 12%;
+  padding-block-end: 5%;
+}
+
+.another__mask1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.another__mask2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  transform: scale(120%);
+  z-index: 1;
+}
+
+.another__left {
+  align-self: flex-end;
+}
+
+.another__img {
+  max-width: 100%;
+}
+
+.another_right {
+  z-index: 1;
+  align-items: end;
+}
+
+.another__tittle {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: clamp(18px, 3vw, 48px);
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -1px;
+  margin-block-end: clamp(0.5em, 0.5vw, 24px);
+}
+
+.section__main_text {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: clamp(12px, 2vw, 21px);
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -0.2px;
+}
+
+.another__btn {
+  z-index: 1;
 }
 
 @media screen and (min-width: 420px) {
