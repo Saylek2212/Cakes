@@ -1,0 +1,52 @@
+.cooks {
+    margin-block-end: $sect_end;
+}
+.cooks__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.cooks__left {
+}
+.section__subtittle {
+}
+.section__tittle {
+
+}
+.cooks__tittle {
+    color: #2e363e;
+    font-family: Montserrat;
+    line-height: clamp(100%, 15vw, 120%);
+    letter-spacing: -1px;
+}
+.cooks__list {
+    min-width: 437px;
+    color: #2e363e;
+    font-family: Montserrat;
+    font-size: clamp(12px, 2vw, 18px);
+    font-weight: 400;
+    line-height: clamp(100%, 5vw, 120%);
+    padding: 2%;
+    li {
+        padding-block-end: clamp(10px, 1vw, 47px);
+    }
+}
+.page_btn {
+}
+.another__btn {
+}
+.cooks__right {
+}
+.cooks__img {
+}
+.cooks__person {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.person-black {
+    margin-inline: 2em; 
+}
+.person-Yulya {
+}
