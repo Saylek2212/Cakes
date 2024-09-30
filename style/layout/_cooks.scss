@@ -6,8 +6,10 @@
     display: flex;
     justify-content: space-between;
     align-items: start;
+    column-gap: 5em;
 }
 .cooks__left {
+    flex-basis: 50%;
 }
 .section__subtittle {
 }
@@ -37,8 +39,10 @@
 .another__btn {
 }
 .cooks__right {
+    flex-basis: 50%;
 }
 .cooks__img {
+    min-width: 250px;
 }
 .cooks__person {
     position: absolute;
@@ -46,7 +50,35 @@
     left: 50%;
 }
 .person-black {
-    margin-inline: 2em; 
+    background: rgba(46, 54, 62, .8);
+    border-radius: 5px;
+    background-blend-mode: normal;
+    transform: skewX(-10grad);
+    padding: 10px 22px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.26px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    display: flex;
+    align-items: center;
 }
 .person-Yulya {
+    background: rgba(242, 246, 250, .5);
+    background-blend-mode: normal;
+    color: #2e363e;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: 220px;
+    transform: skewX(-10grad);
 }
