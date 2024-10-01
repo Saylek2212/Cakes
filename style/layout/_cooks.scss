@@ -1,15 +1,13 @@
 .cooks {
     margin-block-end: $sect_end;
+    position: relative;
 }
 .cooks__inner {
-    position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: start;
-    column-gap: 5em;
+    flex-direction: column;
 }
 .cooks__left {
-    flex-basis: 50%;
+    max-width: 100%;
 }
 .section__subtittle {
 }
@@ -23,7 +21,6 @@
     letter-spacing: -1px;
 }
 .cooks__list {
-    min-width: 437px;
     color: #2e363e;
     font-family: Montserrat;
     font-size: clamp(12px, 2vw, 18px);
@@ -38,46 +35,40 @@
 }
 .another__btn {
 }
-.cooks__right {
-    flex-basis: 50%;
-}
+
 .cooks__img {
     min-width: 250px;
 }
-.cooks__person {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
+
 .person-black {
     background: rgba(46, 54, 62, .8);
     border-radius: 5px;
     background-blend-mode: normal;
     transform: skewX(-10grad);
-    padding: 10px 22px;
+    padding: 1vw 1.5vw;
     color: #ffffff;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: clamp(12px, 3vw, 24px);
     font-weight: 500;
-    line-height: 29.26px;
     text-align: center;
     letter-spacing: -0.3px;
     display: flex;
     align-items: center;
 }
+
 .person-Yulya {
     background: rgba(242, 246, 250, .5);
     background-blend-mode: normal;
     color: #2e363e;
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: clamp(12px, 2vw, 18px);
     font-weight: 400;
     line-height: 21.94px;
     text-transform: uppercase;
     letter-spacing: 1px;
     display: flex;
     align-items: center;
-    padding: 5px 10px;
+    padding: 1vw 1.5vw;
     border-radius: 5px;
     max-width: 220px;
     transform: skewX(-10grad);

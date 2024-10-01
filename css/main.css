@@ -597,7 +597,6 @@ template {
   align-items: end;
   -moz-column-gap: clamp(1em, 3vw, 84px);
        column-gap: clamp(1em, 3vw, 84px);
-  margin-inline-end: 10%;
   padding-block-start: 12%;
   padding-block-end: 5%;
 }
@@ -658,19 +657,16 @@ template {
 
 .cooks {
   margin-block-end: clamp(24px, 8vw, 150px);
+  position: relative;
 }
 
 .cooks__inner {
-  position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: start;
-  -moz-column-gap: 5em;
-       column-gap: 5em;
+  flex-direction: column;
 }
 
 .cooks__left {
-  flex-basis: 50%;
+  max-width: 100%;
 }
 
 .cooks__tittle {
@@ -681,7 +677,6 @@ template {
 }
 
 .cooks__list {
-  min-width: 437px;
   color: #2e363e;
   font-family: Montserrat;
   font-size: clamp(12px, 2vw, 18px);
@@ -693,18 +688,8 @@ template {
   padding-block-end: clamp(10px, 1vw, 47px);
 }
 
-.cooks__right {
-  flex-basis: 50%;
-}
-
 .cooks__img {
   min-width: 250px;
-}
-
-.cooks__person {
-  position: absolute;
-  top: 50%;
-  left: 50%;
 }
 
 .person-black {
@@ -712,12 +697,11 @@ template {
   border-radius: 5px;
   background-blend-mode: normal;
   transform: skewX(-10grad);
-  padding: 10px 22px;
+  padding: 1vw 1.5vw;
   color: #ffffff;
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: clamp(12px, 3vw, 24px);
   font-weight: 500;
-  line-height: 29.26px;
   text-align: center;
   letter-spacing: -0.3px;
   display: flex;
@@ -729,14 +713,14 @@ template {
   background-blend-mode: normal;
   color: #2e363e;
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: clamp(12px, 2vw, 18px);
   font-weight: 400;
   line-height: 21.94px;
   text-transform: uppercase;
   letter-spacing: 1px;
   display: flex;
   align-items: center;
-  padding: 5px 10px;
+  padding: 1vw 1.5vw;
   border-radius: 5px;
   max-width: 220px;
   transform: skewX(-10grad);
@@ -746,15 +730,36 @@ template {
   .page__header {
     background-size: cover;
   }
+  .cooks__person {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .cooks__inner {
+    display: flex;
+    flex-direction: row;
+  }
+  .cooks__right, .cooks__left {
+    flex-basis: 50%;
+  }
 }
 @media screen and (max-width: 812px) {
   .choice__box {
     flex-basis: 45%;
+  }
+  .cooks__list {
+    min-width: 437px;
   }
 }
 @media screen and (max-width: 585px) {
   .choice__box {
     flex-basis: 100%;
     text-align: center;
+  }
+  .cooks__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
   }
 }/*# sourceMappingURL=main.css.map */

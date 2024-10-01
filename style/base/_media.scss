@@ -2,11 +2,30 @@
     .page__header {
     background-size: cover;
     }
+    .cooks__person {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    .cooks__inner {
+        display: flex;
+        flex-direction: row;
+    }
+    .cooks__right, .cooks__left {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
 }
 
 @media screen and (max-width: 812px) {
     .choice__box {
         flex-basis: 45%;
+    }
+    .cooks__list {
+        min-width: 437px;
     }
 }
 
@@ -15,4 +34,12 @@
         flex-basis: 100%;
         text-align: center;
     }
+    .cooks__inner {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
 }
+
+
