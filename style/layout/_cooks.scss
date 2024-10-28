@@ -6,8 +6,8 @@
     display: flex;
     flex-direction: column;
 }
-.cooks__left {
-    max-width: 100%;
+.cooks__left, .cooks__right {
+    flex-basis: 45%;
 }
 .section__subtittle {
 }
@@ -36,10 +36,10 @@
 .another__btn {
 }
 
-.cooks__img {
-    min-width: 250px;
+.cooks__person {
+    position: absolute;
+    bottom: 90%;
 }
-
 .person-black {
     background: rgba(46, 54, 62, .8);
     border-radius: 5px;
@@ -54,6 +54,7 @@
     letter-spacing: -0.3px;
     display: flex;
     align-items: center;
+    z-index: +1;
 }
 
 .person-Yulya {
@@ -72,4 +73,5 @@
     border-radius: 5px;
     max-width: 220px;
     transform: skewX(-10grad);
+    z-index: +1;
 }

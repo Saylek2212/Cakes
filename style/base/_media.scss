@@ -4,29 +4,49 @@
     }
     .cooks__person {
         position: absolute;
-        top: 50%;
+        top: 80%;
         left: 50%;
     }
-    .cooks__inner {
-        display: flex;
-        flex-direction: row;
-    }
-    .cooks__right, .cooks__left {
-        flex-basis: 50%;
-    }
+
 }
 
-@media screen and (max-width: 420px) {
-
+@media screen and (min-width: 585px) {
+    .cooks__inner {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cooks__person {
+        z-index: +1;
+    }
+    .response__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .response__left, .response__right {
+        flex-basis: 45%;
+    }
+    .respons__card {
+        display: flex;
+        column-gap: 4em;
+        padding-block-start: 5em;
+    }
 }
 
 @media screen and (max-width: 812px) {
     .choice__box {
         flex-basis: 45%;
     }
-    .cooks__list {
-        min-width: 437px;
-    }
+    .order__boxex {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+            &.order__boxex:last-child {
+            justify-self: center;
+            }
+}
 }
 
 @media screen and (max-width: 585px) {
@@ -34,12 +54,10 @@
         flex-basis: 100%;
         text-align: center;
     }
-    .cooks__inner {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
+}
+@media screen and (max-width: 420px) {
+    .order__boxex {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
-
 
